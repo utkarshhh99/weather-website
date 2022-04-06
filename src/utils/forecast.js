@@ -13,7 +13,7 @@ const forecast = (latitude,longitude,callback)=>{
             callback(
                 undefined,
                 {
-                    temp: 'It is '+ body.current.temperature +' degrees outside',
+                    temp: 'It is '+ body.current.temperature +' degrees outside. It feels like ' + body.current.feelslike + ' degrees.',
                     
                 }
             ) 
